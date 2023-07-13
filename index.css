@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  font-family: Inter;
+  font-style: normal;
+  line-height: normal;
 }
 
 .home {
@@ -8,8 +11,6 @@ body {
   width: 100vw;
   height: 100vh;
   color: #fff;
-  font-family: Inter;
-  font-style: normal;
 }
 
 .navigation {
@@ -72,4 +73,143 @@ body {
 .content-icon {
   display: flex;
   gap: 12px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 70vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 40px;
+}
+
+.about-heading {
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.about-section2 {
+  display: flex;
+  gap: 40px;
+
+  .content-circle {
+    background-color: #353353;
+    box-shadow: 19px 0px 31px 6px rgba(53, 51, 83, 0.47);
+    min-width: 146px;
+    width: 146px;
+    height: 146px;
+  }
+}
+
+.about-section2-content {
+  display: flex;
+  gap: 20px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 7px 9px 9px 0px rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  width: 100%;
+
+  .item-1 {
+    width: 50%;
+    font-size: 20px;
+    font-weight: 300;
+
+    .button {
+      border-radius: 12px;
+      background: #000;
+      color: #fff;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      padding: 8px;
+      margin-left: 24px;
+    }
+  }
+
+  .item-2 {
+    width: 50%;
+
+    .text-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .common-bar {
+      height: 10px;
+      border-radius: 4px;
+    }
+
+    .bar {
+      width: 100%;
+      background-color: #e0d9d9;
+    }
+
+    .html-bar {
+      width: 92%;
+      background-color: #58fff5;
+    }
+
+    .css-bar {
+      width: 95%;
+      background-color: #fcff58;
+    }
+
+    .javasript-bar {
+      width: 83%;
+      background-color: #58ff7d;
+    }
+
+    .figma-bar {
+      width: 87%;
+      background-color: #16959d;
+    }
+  }
+}
+
+.about-section3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .heading {
+    margin: 0;
+  }
+
+  .text {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 70vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 40px;
+
+  .heading {
+    font-size: 31px;
+    font-weight: 800;
+  }
+
+  .service-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 24px;
+    column-gap: 80px;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .service-item {
+    border-radius: 24px;
+    background-color: #353353;
+    color: #fff;
+    text-align: center;
+    padding: 24px;
+  }
 }
