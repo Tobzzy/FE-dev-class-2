@@ -3,6 +3,7 @@ body {
   font-family: Inter;
   font-style: normal;
   line-height: normal;
+  background-color: #f9f9ff;
 }
 
 .home {
@@ -75,19 +76,32 @@ body {
   gap: 12px;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 70vw;
+  margin: 40px 15vw;
+}
+
 .about {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 70vw;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  margin-top: 40px;
 }
 
-.about-heading {
+.heading {
   font-size: 31px;
   font-weight: 800;
+}
+
+.button {
+  border-radius: 12px;
+  background: #000;
+  color: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 8px;
+  margin-left: 24px;
 }
 
 .about-section2 {
@@ -116,15 +130,6 @@ body {
     width: 50%;
     font-size: 20px;
     font-weight: 300;
-
-    .button {
-      border-radius: 12px;
-      background: #000;
-      color: #fff;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      padding: 8px;
-      margin-left: 24px;
-    }
   }
 
   .item-2 {
@@ -186,15 +191,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 70vw;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  margin-top: 40px;
-
-  .heading {
-    font-size: 31px;
-    font-weight: 800;
-  }
 
   .service-content {
     display: grid;
@@ -211,5 +207,79 @@ body {
     color: #fff;
     text-align: center;
     padding: 24px;
+  }
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 20px;
+    background: #353353;
+    box-shadow: -18px -10px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    padding: 16px 24px;
+  }
+
+  .internal-item {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    height: 120px;
+  }
+
+  .line {
+    position: absolute;
+    width: 1px;
+    background-color: #fff;
+    height: 104px;
+    left: 11.5px;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .contact-content {
+    display: flex;
+    gap: 24px;
+  }
+
+  .contact-text {
+    width: 40%;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 60%;
+
+    .group-input {
+      display: flex;
+      width: 100%;
+      gap: 24px;
+    }
+
+    .input {
+      padding: 16px;
+      border-radius: 12px;
+      border: none;
+      width: 100%;
+      color: #000000;
+    }
   }
 }
